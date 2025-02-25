@@ -1,0 +1,67 @@
+/* -- INICIALIZAÇÃO -- */
+* {
+    margin:0px;
+    padding:0px;
+}
+img {
+    /*não utrapassa o contener dela*/
+    display: block; 
+    max-width: 100%; 
+}
+ul {
+    list-style: none;
+}
+body{
+    background: #faf6ed;
+    color: #222;
+    /*divide o site em colunas*/
+    display: grid;
+    grid-template-columns: 1fr  120px minmax(300px,800px) 1fr;
+}
+/* -- INICIALIZAÇÃO -- */
+
+
+/* -- MENU -- */
+.menu{
+    grid-column: 3/5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #fb5;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap; /*quebre na proxima linha */
+    padding: 10px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:0.875rem;
+    letter-spacing: .1rem;
+}
+.grid-section{
+    grid-column: 2/4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+}
+/* -- MENU -- */
+
+.Titulo{
+    font-family: Georgia;
+    font-size: 1;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1/4;
+}
+
+/* re é uma unidade relativa no css, baseada no tamano raiza do documento. Por exemplo, se o tamanho da fonte raiz for 16px, 1 rem é igual 16px
